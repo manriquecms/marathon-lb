@@ -1782,6 +1782,7 @@ def get_arg_parser():
     parser.add_argument("--marathon-lb-cert-name",
                         help="Default marathon-lb certificate name",
                         default="marathon-lb.pem"
+                        )
     parser.add_argument("--longhelp",
                         help="Print out configuration details",
                         action="store_true"
