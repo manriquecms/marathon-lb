@@ -193,7 +193,7 @@ cat > $LB_SERVICE/run << EOF
 exec 2>&1
 cd /marathon-lb
 exec /marathon-lb/marathon_lb.py \
-    --marathon-lb-cert-name "$MARATHON_LB_CERT_NAME"
+    --marathon-lb-cert-name "$MARATHON_LB_CERT_NAME" \
     --syslog-socket $SYSLOG_SOCKET \
     --haproxy-config /marathon-lb/haproxy.cfg \
     --ssl-certs "${SSL_CERTS}" \
